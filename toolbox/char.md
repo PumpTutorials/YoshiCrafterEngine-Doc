@@ -5,7 +5,7 @@ To create a new Character, click on the "Create" button at the bottom of the scr
 
 A "Create a Character" window will pop up.
 
-![Create a character window](/img/charcreator.png)
+![Create a character window](../img/charcreator.png)
 
 In this window, you'll need to enter a few parameters, such as:
 - Character Name: The name of your character.
