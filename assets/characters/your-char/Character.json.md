@@ -4,7 +4,7 @@
 
 The `Character.json` file is used by the Toolbox to save the character settings without overriding the default `Character.hx`, allowing easy editing and preventing the `Character.hx` file to be overriden, allowing custom code to be written without any interference with the Toolbox.
 
-```json
+```jsonc
 {
     // Array with all of the character's animations
     "anims": [

@@ -7,7 +7,7 @@ The Stage JSON is loaded in the game using the [script](../../scripting/Script.m
 
 ## How does it works?
 
-```json
+```jsonc
 {
     // Array with all of the sprites present in the stage.
     "sprites": [

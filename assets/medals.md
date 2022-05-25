@@ -29,7 +29,7 @@ Medals.getState("Medal Name");
 
 ## How does the JSON works?
 
-```json
+```jsonc
 {
 
     // Array containing all medal info.

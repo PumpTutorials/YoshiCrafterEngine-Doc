@@ -6,7 +6,7 @@ Config.json allows you to set your mod's info such as the Name, Description, Tit
 
 ## How does it works?
 
-```json
+```jsonc
 {
     // Text that will be shown in the title bar when the mod is being played
 	"titleBarName": "Friday Night Funkin' - Mod Name",

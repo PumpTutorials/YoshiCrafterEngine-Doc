@@ -6,7 +6,7 @@ The freeplay song list handles every song that pops up in the Freeplay menu.
 
 The syntax is the following:
 
-```json
+```jsonc
 {
     // array of all freeplay songs.
     "songs": [
