@@ -22,3 +22,8 @@ Welcome to the YoshiCrafter Engine documentation.
 ## Class Documentation
 - [`MainMenuState`](source/MainMenuState.md)
 - [`MenuOptions`](source/MenuOptions.md)    
+
+## Specific documentation
+- [`How to add a script`](specific/AddScript.md)
+- [`Script Events`](specific/ScriptEvents.md)
+- [`How to get and move a strum`](specific/MoveStrum.md)
