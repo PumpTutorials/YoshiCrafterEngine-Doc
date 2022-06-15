@@ -12,3 +12,6 @@ Here will contain every single question you can ever ask. If something's missing
 - [How to move a strum](specific/MoveStrum.md)
 - [How to tween a strum](specific/TweenStrum.md)
 - [How to rotate a strum](specific/RotateStrum.md)
+
+## UI Modding
+- [How to add options in the main menu](specific/AddOptionsInMainMenu.md)
