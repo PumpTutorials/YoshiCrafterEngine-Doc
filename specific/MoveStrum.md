@@ -1,20 +1,11 @@
 # Script Basics
-## How to move a strum
+## __Moving a strum.__
 
-### What is a strum ?
+Lets say we want to move the down note a little bit lower (ID: 5)
 
-Strums are the gray static arrows that you can see at the top of the screen (or bottom if you play in downscroll). These are the "destination point" of notes, and can be played around easily.
+To move a strum lower, it's not that complicated, you just need to set the Y value of it, like shown in this code snippet:
 
-### How do i move a strum ?
-
-First of all, we need to get which strum do you wanna move.
-
-To get a strum, we'll need the `PlayState.getStrum(id:Int)` function.
-
-The ID corresponds to the index of the strum, going from CPU strums to Player Strums.
-
-Example on a 4 keys chart:
-
-`0123 4567`
-
-:arrow_backward::arrow_down_small::arrow_up_small::arrow_forward:` `:arrow_backward::arrow_down_small::arrow_up_small::arrow_forward:
+```haxe
+var strum = PlayState.getStrum(5);
+strum.y += 10;
+```
