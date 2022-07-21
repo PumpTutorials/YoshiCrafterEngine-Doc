@@ -9,6 +9,9 @@ Welcome to the YoshiCrafter Engine documentation.
 
 ## Script Documentation
 - [**Scripts Documentation**](scripting/Script.md)
+- [**Shaders Documentation**](scripting/Shaders.md)
+
+## Specific Files Documentation
 - [`characters/your-char/Character.json`](assets/characters/your-char/Character.json.md)
 - [`characters/your-char/Character.hx`](assets/characters/your-char/Character.hx.md)
 - [`data/freeplaySonglist.json`](assets/data/freeplaySonglist.md)

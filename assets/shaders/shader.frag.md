@@ -21,15 +21,3 @@ void main() {
 
 If you want more information, i recommend checking the [GLSL Official Documentation](https://docs.gl/sl4/all).
 
-## How to apply it on my sprite?
-
-To apply it on your sprite, it only requires a few lines of code in a [script](../../scripting/Script.md).
-
-```haxe
-// Do not add an extension to the shader name.
-sprite.shader = new CustomShader(Paths.shader('shaderName'));
-```
-
-## After applying the shader to my sprite, it becomes invisible. What should i do?
-
-Opening the [logs](../../devmode/logs.md) will allow you to see a compilation error report for your shader.
