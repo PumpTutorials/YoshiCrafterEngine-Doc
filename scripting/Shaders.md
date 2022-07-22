@@ -1,7 +1,7 @@
-# Script Documentation
+# Shader Documentation
 ## __How does shaders works?__
 
-Shaders is code runned on the GPU used to alter images. It's optimized and compiled on runtime. It's basically the GPU code that ninjamuffin99's talking about.
+Shaders is code runned on the GPU used to alter bitmaps. It's optimized and compiled on runtime. It's basically the GPU code that ninjamuffin99's talking about.
 
 Shaders are divided in 2 parts:
 - Fragment shaders
@@ -48,4 +48,4 @@ void main() {
 
 ## After applying the shader to my sprite, it becomes invisible. What should i do?
 
-Opening the [logs](../../devmode/logs.md) will allow you to see a compilation error report for your shader.
+Opening the [logs](../devmode/logs.md) will allow you to see a compilation error report for your shader.

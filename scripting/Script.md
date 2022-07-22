@@ -7,6 +7,8 @@ You can either check the **Specific documentation** or **How does it works** cat
 
 ## Specific documentation
 - [Song Scripts](SongScripts.md)
+- [Characters Scripts](CharacterScript.md)
+- [Shaders](Shaders.md)
 
 ## How does it works?
 In scripts, you can add callbacks to functions this way:

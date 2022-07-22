@@ -8,7 +8,7 @@ Welcome to the YoshiCrafter Engine documentation.
 
 
 ## Script Documentation
-- [**Scripts Documentation**](scripting/Script.md)
+- [**Code Documentation**](scripting/Script.md)
 - [**Shaders Documentation**](scripting/Shaders.md)
 
 ## Specific Files Documentation

@@ -10,7 +10,7 @@ To create a new script for your song,
 
 ## Callbacks
 
-Here's an entire "file" with every single callback, along with its use.
+Here's an entire file with every single callback, along with its use.
 
 You can download it [here](SongScript.hx).
 
