@@ -4,7 +4,7 @@
 Methods location in source code: `Script.hx`
 
 ---
-## **`getField`**
+## **getField**
 ```haxe
 function getField(path:String, varName:String)
 
@@ -33,7 +33,7 @@ end
 ```
 
 ---
-## **`setField`**
+## **setField**
 ```haxe
 function getField(path:String, value:Any)
 function getField(classPath:String, path:String, value:Any)
@@ -56,7 +56,7 @@ end
 ```
 
 ---
-## **`call`**
+## **call**
 ```haxe
 function call(path:String, args:Array<Any>, returnValue:String)
 function call(class:String, path:String, args:Array<Any>, returnValue:String)
@@ -80,7 +80,7 @@ end
 
 
 ---
-## **`createInstance`**
+## **createInstance**
 ```haxe
 function createInstance(varName:String, classPath:String, parameters:Array<Any>)
 function createInstance(varName:String, classPath:String)
@@ -98,7 +98,7 @@ end
 ```
 
 ---
-## **`refVar`**
+## **refVar**
 ```haxe
 function refVar(varName:String)
 ```
@@ -114,7 +114,7 @@ end
 ```
 
 ---
-## **`clearVariable`**
+## **clearVariable**
 ```haxe
 function clearVariable(name:String)
 ```

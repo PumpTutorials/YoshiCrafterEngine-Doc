@@ -4,7 +4,7 @@
 Methods location in source code: `LuaFuncs.hx`
 
 ---
-## **`createSprite`**
+## **createSprite**
 ```haxe
 function createSprite(name:String, x:Float, y:Float, spritePath:String, isGridSprite:Bool, width:Int, height:Int)
 ```
@@ -22,7 +22,7 @@ end
 
 
 ---
-## **`addSprite`**
+## **addSprite**
 ```haxe
 function addSprite(name:String)
 ```
@@ -36,7 +36,7 @@ addSprite("bg")
 ```
 
 ---
-## **`getSpriteInfo`**
+## **getSpriteInfo**
 ```haxe
 function getSpriteInfo(name:String)
 ```
@@ -59,7 +59,7 @@ end
 ```
 
 ---
-## **`applySpriteInfo`**
+## **applySpriteInfo**
 ```haxe
 function applySpriteInfo(info:Table)
 function applySpriteInfo(info:Table, name:String)
@@ -79,7 +79,7 @@ end
 ```
 
 ---
-## **`getSprite`**
+## **getSprite**
 ```haxe
 function getSprite(name:String, varName:String)
 ```
@@ -93,7 +93,7 @@ setSpritePosition("stage_item", 150, 150)
 ```
 
 ---
-## **`getSpriteX`**
+## **getSpriteX**
 ```haxe
 function getSpriteX(name:String)
 ```
@@ -106,7 +106,7 @@ local x = getSpriteX("boyfriend")
 ```
 
 ---
-## **`getSpriteY`**
+## **getSpriteY**
 ```haxe
 function getSpriteY(name:String)
 ```
@@ -119,7 +119,7 @@ local y = getSpriteY("boyfriend")
 ```
 
 ---
-## **`getSpriteAngle`**
+## **getSpriteAngle**
 ```haxe
 function getSpriteAngle(name:String)
 ```
@@ -132,7 +132,7 @@ local angle = getSpriteAngle("boyfriend")
 ```
 
 ---
-## **`getSpriteAngle`**
+## **getSpriteAngle**
 ```haxe
 function getSpriteAngle(name:String)
 ```
@@ -145,7 +145,7 @@ local angle = getSpriteAngle("boyfriend")
 ```
 
 ---
-## **`setSpriteAngle`**
+## **setSpriteAngle**
 ```haxe
 function setSpriteAngle(name:String, angle:Float)
 ```
@@ -158,7 +158,7 @@ setSpriteAngle("boyfriend", 45)
 ```
 
 ---
-## **`getSpriteAlpha`**
+## **getSpriteAlpha**
 ```haxe
 function getSpriteAlpha(name:String)
 ```
@@ -171,7 +171,7 @@ local alpha = getSpriteAlpha("boyfriend")
 ```
 
 ---
-## **`setSpriteAlpha`**
+## **setSpriteAlpha**
 ```haxe
 function setSpriteAlpha(name:String, alpha:Float)
 ```
@@ -184,7 +184,7 @@ setSpriteAlpha("boyfriend", 0.5)
 ```
 
 ---
-## **`getSpriteScale`**
+## **getSpriteScale**
 ```haxe
 function getSpriteScale(name:String)
 ```
@@ -197,7 +197,7 @@ local scale = getSpriteScale("boyfriend")
 ```
 
 ---
-## **`setSpriteScale`**
+## **setSpriteScale**
 ```haxe
 function setSpriteScale(name:String, scale:Float)
 ```
@@ -210,7 +210,7 @@ setSpriteScale("boyfriend", 0.5)
 ```
 
 ---
-## **`getSpriteScaleX`**
+## **getSpriteScaleX**
 ```haxe
 function getSpriteScaleX(name:String)
 ```
@@ -223,7 +223,7 @@ local scale = getSpriteScaleX("boyfriend")
 ```
 
 ---
-## **`setSpriteScaleX`**
+## **setSpriteScaleX**
 ```haxe
 function setSpriteScaleX(name:String, scale:Float)
 ```
@@ -236,7 +236,7 @@ setSpriteScaleX("boyfriend", 0.5)
 ```
 
 ---
-## **`getSpriteScaleY`**
+## **getSpriteScaleY**
 ```haxe
 function getSpriteScaleY(name:String)
 ```
@@ -249,7 +249,7 @@ local scale = getSpriteScaleY("boyfriend")
 ```
 
 ---
-## **`setSpriteScaleY`**
+## **setSpriteScaleY**
 ```haxe
 function setSpriteScaleY(name:String, scale:Float)
 ```
@@ -262,7 +262,7 @@ setSpriteScaleY("boyfriend", 150)
 ```
 
 ---
-## **`getSpriteOffsetX`**
+## **getSpriteOffsetX**
 ```haxe
 function getSpriteOffsetX(name:String)
 ```
@@ -275,7 +275,7 @@ local offset = getSpriteOffsetX("boyfriend")
 ```
 
 ---
-## **`setSpriteOffsetX`**
+## **setSpriteOffsetX**
 ```haxe
 function setSpriteOffsetX(name:String, offset:Float)
 ```
@@ -288,7 +288,7 @@ setSpriteOffsetX("mySprite", 150)
 ```
 
 ---
-## **`getSpriteOffsetY`**
+## **getSpriteOffsetY**
 ```haxe
 function getSpriteOffsetY(name:String)
 ```
@@ -301,7 +301,7 @@ local offset = getSpriteOffsetY("boyfriend")
 ```
 
 ---
-## **`setSpriteOffsetY`**
+## **setSpriteOffsetY**
 ```haxe
 function setSpriteOffsetY(name:String, offset:Float)
 ```
@@ -314,7 +314,7 @@ setSpriteOffsetY("mySprite", 150)
 ```
 
 ---
-## **`setSpriteOffset`**
+## **setSpriteOffset**
 ```haxe
 function setSpriteOffset(name:String, offsetX:Float, offsetY:Float)
 ```
@@ -327,7 +327,7 @@ setSpriteOffsetY("mySprite", 150, 150)
 ```
 
 ---
-## **`setSpriteGraphicSize`**
+## **setSpriteGraphicSize**
 ```haxe
 function setSpriteGraphicSize(name:String, width:Int, height:Int, updateHitbox:Bool = true)
 ```
@@ -342,7 +342,7 @@ setSpriteGraphicSize("mySprite", 1280, 720)
 ```
 
 ---
-## **`updateSpriteHitbox`**
+## **updateSpriteHitbox**
 ```haxe
 function updateSpriteHitbox(name:String)
 ```
@@ -355,7 +355,7 @@ updateSpriteHitbox("mySprite")
 ```
 
 ---
-## **`getSpriteAntialiasing`**
+## **getSpriteAntialiasing**
 ```haxe
 function getSpriteAntialiasing(name:String)
 ```
@@ -370,7 +370,7 @@ end
 ```
 
 ---
-## **`setSpriteAntialiasing`**
+## **setSpriteAntialiasing**
 ```haxe
 function setSpriteAntialiasing(name:String, aa:Bool)
 ```
@@ -383,7 +383,7 @@ setSpriteAntialiasing("mySprite", false) -- for pixel stages
 ```
 
 ---
-## **`getSpriteFlipX`**
+## **getSpriteFlipX**
 ```haxe
 function getSpriteFlipX(name:String)
 ```
@@ -400,7 +400,7 @@ end
 ```
 
 ---
-## **`setSpriteFlipX`**
+## **setSpriteFlipX**
 ```haxe
 function setSpriteFlipX(name:String, flipX:Bool)
 ```
@@ -414,7 +414,7 @@ setSpriteFlipX("boyfriend", not getSpriteFlipX("boyfriend"))
 ```
 
 ---
-## **`getSpriteFlipY`**
+## **getSpriteFlipY**
 ```haxe
 function getSpriteFlipY(name:String)
 ```
@@ -431,7 +431,7 @@ end
 ```
 
 ---
-## **`setSpriteFlipY`**
+## **setSpriteFlipY**
 ```haxe
 function setSpriteFlipY(name:String, flipY:Bool)
 ```
@@ -445,7 +445,7 @@ setSpriteFlipY("boyfriend", true)
 ```
 
 ---
-## **`setSpriteFlip`**
+## **setSpriteFlip**
 ```haxe
 function setSpriteFlip(name:String, flipX:Bool, flipY:Bool)
 ```
@@ -459,7 +459,7 @@ setSpriteFlipY("boyfriend", true, true)
 ```
 
 ---
-## **`getSpriteVisible`**
+## **getSpriteVisible**
 ```haxe
 function getSpriteVisible(name:String)
 ```
@@ -476,7 +476,7 @@ end
 ```
 
 ---
-## **`setSpriteVisible`**
+## **setSpriteVisible**
 ```haxe
 function setSpriteVisible(name:String, visible:Bool)
 ```
@@ -490,7 +490,7 @@ setSpriteVisible("boyfriend", false)
 ```
 
 ---
-## **`setSpritePosition`**
+## **setSpritePosition**
 ```haxe
 function setSpritePosition(name:String, x:Float, y:Float)
 ```
@@ -504,7 +504,7 @@ setSpritePosition("boyfriend", 0, 500)
 ```
 
 ---
-## **`setSpriteCamera`**
+## **setSpriteCamera**
 ```haxe
 function setSpriteCamera(name:String, cam:String)
 function setSpriteCamera(name:String, cam:Int)
@@ -521,7 +521,7 @@ setSpriteCamera("boyfriend", "hud")
 ```
 
 ---
-## **`setSpriteColor`**
+## **setSpriteColor**
 ```haxe
 function setSpriteColor(name:String, color:Int)
 function setSpriteColor(name:String, color:String)
@@ -536,7 +536,7 @@ setSpriteColor("boyfriend", "#FF0000")
 ```
 
 ---
-## **`setSpriteScrollFactor`**
+## **setSpriteScrollFactor**
 ```haxe
 function setSpriteScrollFactor(name:String, x:Float, y:Float)
 ```
@@ -550,7 +550,7 @@ setSpriteColor("boyfriend", 2, 2)
 ```
 
 ---
-## **`getSpriteScrollFactorX`**
+## **getSpriteScrollFactorX**
 ```haxe
 function getSpriteScrollFactorX(name:String)
 ```
@@ -564,7 +564,7 @@ getSpriteScrollFactorX("boyfriend")
 ```
 
 ---
-## **`getSpriteScrollFactorY`**
+## **getSpriteScrollFactorY**
 ```haxe
 function getSpriteScrollFactorY(name:String)
 ```
@@ -578,7 +578,7 @@ getSpriteScrollFactorY("gf")
 ```
 
 ---
-## **`setSpriteVelocity`**
+## **setSpriteVelocity**
 ```haxe
 function setSpriteVelocity(name:String, x:Float, y:Float)
 ```
@@ -592,7 +592,7 @@ setSpriteVelocity("gf", 80, 0)
 ```
 
 ---
-## **`getSpriteVelocityX`**
+## **getSpriteVelocityX**
 ```haxe
 function getSpriteVelocityX(name:String)
 ```
@@ -605,7 +605,7 @@ local velocityX = getSpriteVelocityX("gf")
 ```
 
 ---
-## **`getSpriteVelocityY`**
+## **getSpriteVelocityY**
 ```haxe
 function getSpriteVelocityY(name:String)
 ```
