@@ -39,7 +39,7 @@ function getField(path:String, value:Any)
 function getField(classPath:String, path:String, value:Any)
 function getField(reference:RefVar, path:String, value:Any)
 ```
-##### Can also be called via `set`, `setField`, `setValue`, `setVariable`, and others.
+##### Can also be called via `set`, `setProperty`, `setValue`, `setVariable`, and others.
 
 Looks for a field, and sets its value.
 
@@ -78,21 +78,6 @@ function createPost()
 end
 ```
 
----
-## **`refVar`**
-```haxe
-function refVar(varName:String)
-```
-Returns a reference to the `varName` variable, so that it can be used in `setField`, or `call`.
-
-### Example usage:
-```lua
-function createPost()
-    -- have you seen this its the same example as above!
-    createInstance("sprite", "flixel.FlxSprite", {0, 0, getImagePath("wall")})
-    call("PlayState.add", {refVar("sprite")})
-end
-```
 
 ---
 ## **`createInstance`**
@@ -109,6 +94,22 @@ Returns a reference to the new variable if successful, returns `nil` otherwise.
 function createPost()
     -- im out of ideas so simple flxsprite sorry guys
     createInstance("sprite", "flixel.FlxSprite", {0, 0, getImagePath("wall")})
+end
+```
+
+---
+## **`refVar`**
+```haxe
+function refVar(varName:String)
+```
+Returns a reference to the `varName` variable, so that it can be used in `setField`, or `call`.
+
+### Example usage:
+```lua
+function createPost()
+    -- have you seen this its the same example as above!
+    createInstance("sprite", "flixel.FlxSprite", {0, 0, getImagePath("wall")})
+    call("PlayState.add", {refVar("sprite")})
 end
 ```
 

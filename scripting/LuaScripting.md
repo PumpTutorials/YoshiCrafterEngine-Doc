@@ -1,4 +1,12 @@
 # Lua Scripting Documentation
+
+## __⚠ Warning ⚠__
+
+The Lua system is still in a early state, which means it may miss some useful functions.
+
+If you want a function to be added, put it in the `#⚙│lua-funcs-requests` channel on the [Discord Server](https://discord.gg/Ds48wGPx4W)
+
+---
 ## __How does LUA scripts works?__
 
 Lua scripts are scripts created using the LUA programming language.
