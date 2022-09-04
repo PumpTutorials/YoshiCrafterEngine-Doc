@@ -36,9 +36,7 @@ end
 ## **`setField`**
 ```haxe
 function getField(path:String, value:Any)
-
 function getField(classPath:String, path:String, value:Any)
-
 function getField(reference:RefVar, path:String, value:Any)
 ```
 ##### Can also be called via `set`, `setField`, `setValue`, `setVariable`, and others.
@@ -54,6 +52,45 @@ function createPost()
     setField("maxHealth", 5)
     setField("boyfriend.x", getField("boyfriend.x") + 150)
     setField("lime.app.Application", "current.window.title", "New window title!")
+end
+```
+
+---
+## **`call`**
+```haxe
+function call(path:String, args:Array<Any>, returnValue:String)
+function call(class:String, path:String, args:Array<Any>, returnValue:String)
+function call(reference:RefVar, path:String, args:Array<Any>, returnValue:String)
+```
+
+Calls a Haxe method at the specified path and returns the return value.
+
+If the function does not have a return value, `nil` is returned.
+
+If the function's return value cannot be converted to Lua, it'll be set to the `returnValue` variable, and a reference to it will be returned.
+
+### Example usage:
+```lua
+function createPost()
+    -- im out of ideas so simple flxsprite sorry guys
+    createInstance("sprite", "flixel.FlxSprite", {0, 0, getImagePath("wall")})
+    call("PlayState.add", {refVar("sprite")})
+end
+```
+
+---
+## **`refVar`**
+```haxe
+function refVar(varName:String)
+```
+Returns a reference to the `varName` variable, so that it can be used in `setField`, or `call`.
+
+### Example usage:
+```lua
+function createPost()
+    -- have you seen this its the same example as above!
+    createInstance("sprite", "flixel.FlxSprite", {0, 0, getImagePath("wall")})
+    call("PlayState.add", {refVar("sprite")})
 end
 ```
 
