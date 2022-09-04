@@ -20,6 +20,21 @@ function create()
 end
 ```
 
+
+---
+## **`addSprite`**
+```haxe
+function addSprite(name:String)
+```
+
+Adds a sprite to the stage. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+createSprite("bg", 0, 0, "stages/my-stage/bg")
+addSprite("bg")
+```
+
 ---
 ## **`getSpriteInfo`**
 ```haxe
@@ -327,7 +342,7 @@ setSpriteGraphicSize("mySprite", 1280, 720)
 ```
 
 ---
-## **``**
+## **`updateSpriteHitbox`**
 ```haxe
 function updateSpriteHitbox(name:String)
 ```
@@ -340,7 +355,7 @@ updateSpriteHitbox("mySprite")
 ```
 
 ---
-## **``**
+## **`getSpriteAntialiasing`**
 ```haxe
 function getSpriteAntialiasing(name:String)
 ```
@@ -355,7 +370,7 @@ end
 ```
 
 ---
-## **``**
+## **`setSpriteAntialiasing`**
 ```haxe
 function setSpriteAntialiasing(name:String, aa:Bool)
 ```
@@ -368,14 +383,236 @@ setSpriteAntialiasing("mySprite", false) -- for pixel stages
 ```
 
 ---
-## **``**
+## **`getSpriteFlipX`**
 ```haxe
-function ()
+function getSpriteFlipX(name:String)
 ```
 
-Sets a sprite's offset. Returns `true` if successful, returns `false` otherwise.
+Gets whenever the sprite is flipped horizontally or not.
+
+If the sprite is not found, returns `nil`.
 
 ### Example usage:
 ```lua
+if getSpriteFlipX("boyfriend") then
+    -- boyfriend is flipped.
+end
+```
 
+---
+## **`setSpriteFlipX`**
+```haxe
+function setSpriteFlipX(name:String, flipX:Bool)
+```
+
+Sets the flipX value of a sprite which determines whenever it should be flipped horizontally or not. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- makes bf look the other way
+setSpriteFlipX("boyfriend", not getSpriteFlipX("boyfriend"))
+```
+
+---
+## **`getSpriteFlipY`**
+```haxe
+function getSpriteFlipY(name:String)
+```
+
+Gets whenever the sprite is flipped vertically or not.
+
+If the sprite is not found, returns `nil`.
+
+### Example usage:
+```lua
+if getSpriteFlipY("boyfriend") then
+    -- boyfriend is upside down.
+end
+```
+
+---
+## **`setSpriteFlipY`**
+```haxe
+function setSpriteFlipY(name:String, flipY:Bool)
+```
+
+Sets the flipY value of a sprite which determines whenever it should be flipped vertically or not. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- puts bf upside down
+setSpriteFlipY("boyfriend", true)
+```
+
+---
+## **`setSpriteFlip`**
+```haxe
+function setSpriteFlip(name:String, flipX:Bool, flipY:Bool)
+```
+
+Sets the flip values of a sprite which determines whenever it should be flipped horizontally and vertically. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- basically rotates 180°
+setSpriteFlipY("boyfriend", true, true)
+```
+
+---
+## **`getSpriteVisible`**
+```haxe
+function getSpriteVisible(name:String)
+```
+
+Returns `true` if the sprite is visible, returns `false` otherwise.
+
+If the sprite is not found, returns `nil`.
+
+### Example usage:
+```lua
+if getSpriteVisible("boyfriend") then
+    -- boyfriend is visible.
+end
+```
+
+---
+## **`setSpriteVisible`**
+```haxe
+function setSpriteVisible(name:String, visible:Bool)
+```
+
+Sets whenever a sprite is visible or not. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- boyfriend is now invisible
+setSpriteVisible("boyfriend", false)
+```
+
+---
+## **`setSpritePosition`**
+```haxe
+function setSpritePosition(name:String, x:Float, y:Float)
+```
+
+Sets a sprite's position. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- boyfriend is now underground
+setSpritePosition("boyfriend", 0, 500)
+```
+
+---
+## **`setSpriteCamera`**
+```haxe
+function setSpriteCamera(name:String, cam:String)
+function setSpriteCamera(name:String, cam:Int)
+```
+
+Sets a sprite's camera. Returns `true` if successful, returns `false` otherwise.
+
+The camera can be identified as a string (`game`, `hud`), or an ID (`0`, `1`)
+
+### Example usage:
+```lua
+-- boyfriend is now on the hud
+setSpriteCamera("boyfriend", "hud")
+```
+
+---
+## **`setSpriteColor`**
+```haxe
+function setSpriteColor(name:String, color:Int)
+function setSpriteColor(name:String, color:String)
+```
+
+Sets a sprite's camera. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- boyfriend is now red
+setSpriteColor("boyfriend", "#FF0000")
+```
+
+---
+## **`setSpriteScrollFactor`**
+```haxe
+function setSpriteScrollFactor(name:String, x:Float, y:Float)
+```
+
+Sets a sprite's scroll factor. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- boyfriend now is "closer" to the camera
+setSpriteColor("boyfriend", 2, 2)
+```
+
+---
+## **`getSpriteScrollFactorX`**
+```haxe
+function getSpriteScrollFactorX(name:String)
+```
+
+Gets a sprite's X scroll factor. Returns `nil` if the sprite isn't found.
+
+### Example usage:
+```lua
+-- 1
+getSpriteScrollFactorX("boyfriend")
+```
+
+---
+## **`getSpriteScrollFactorY`**
+```haxe
+function getSpriteScrollFactorY(name:String)
+```
+
+Gets a sprite's Y scroll factor. Returns `nil` if the sprite isn't found.
+
+### Example usage:
+```lua
+-- 0.95
+getSpriteScrollFactorY("gf")
+```
+
+---
+## **`setSpriteVelocity`**
+```haxe
+function setSpriteVelocity(name:String, x:Float, y:Float)
+```
+
+Sets a sprite's velocity. Returns `true` if successful, returns `false` otherwise.
+
+### Example usage:
+```lua
+-- gf will move 80 pixels to the right per second.
+setSpriteVelocity("gf", 80, 0)
+```
+
+---
+## **`getSpriteVelocityX`**
+```haxe
+function getSpriteVelocityX(name:String)
+```
+
+Gets a sprite's X velocity. Returns `nil` if the sprite isn't found.
+
+### Example usage:
+```lua
+local velocityX = getSpriteVelocityX("gf")
+```
+
+---
+## **`getSpriteVelocityY`**
+```haxe
+function getSpriteVelocityY(name:String)
+```
+
+Gets a sprite's Y velocity. Returns `nil` if the sprite isn't found.
+
+### Example usage:
+```lua
+local velocityY = getSpriteVelocityY("gf")
 ```
