@@ -113,7 +113,7 @@ function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Fr
 ---
 Gets animation name
 ```haxe
-function getAnimName()
+function getAnimName():String
 ```
 ---
 Loads a Character JSON
