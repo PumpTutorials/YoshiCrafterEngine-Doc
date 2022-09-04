@@ -27,7 +27,8 @@ While being easier than HScript, it may show some limitations. Lua is mainly use
 
 ### __Global documentation__
 - [**Basics**](lua/Basics.md) - Functions that are the core of the YoshiCrafter Engine lua support, such as `setField`, `call` and `getField`.
-- [**Game related**](lua/GameRelated.md) - Functions that are more specific to the game itself, such as `createSprite` and `addAnimationByPrefix`.
+- **Game related** - Functions that are more specific to the game itself, such as `createSprite` and `addAnimationByPrefix`.
+    - [**Sprites**](lua/GameRelated-Sprites.md) - Functions related to FlxSprites
 - [**Haxe Helper**](lua/HaxeHelper.md) - Functions that are related to the Haxe helper, which allows you to run HScript code directly in your lua scripts, with methods such as `executeHaxe` and `addHaxeCallback`.
 
 ### __Specific documentation__
